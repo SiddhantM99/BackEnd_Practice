@@ -1,0 +1,17 @@
+<%- include("includes/head.ejs") %>
+<body>
+    <!-- <h1>
+        Dice gave value :  <%= Math.floor(Math.random() * 6) + 1 %>
+    </h1> -->
+
+    
+    <h1>
+        Dice gave value : <%= diceVal %> <!--Because in this tags we generally take data from the data base  -->
+    </h1>
+<!-- Conditional Statements in ejs -->
+    <% if(diceVal ==6) { %>  
+        <h1> Nice! Roll it again</h1>
+        <%  } %>
+
+</body>
+</html>
